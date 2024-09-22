@@ -1,0 +1,420 @@
+/*
+skins available:
+	- default
+*/
+/* the border */
+* {-webkit-text-size-adjust: none;}
+.youtubeVimeoWithPlaylistBorder {
+	position:relative;
+	overflow:hidden;
+}
+
+
+/* the container */
+.youtubeVimeoWithPlaylist {
+	position:relative;
+	text-align:left !important; 
+}
+.youtubeVimeoWithPlaylist img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width:none;
+	max-height:none;
+}
+.youtubeVimeoWithPlaylist_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+.youtubeVimeoWithPlaylist .stripe {
+	position:absolute;
+	display:block;
+	height:100%;
+	z-index:1;
+	overflow:hidden;
+}
+.youtubeVimeoWithPlaylist .block {
+	position:absolute;
+	display:block;
+	z-index:1;
+	overflow:hidden;
+}
+.mycanvas {
+	position:absolute;
+	top:8px;
+	right:10px;
+	z-index:4;
+}
+
+
+/***default SKIN***/
+
+.youtubeVimeoWithPlaylist.default .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+}
+
+.youtubeVimeoWithPlaylist.default .leftNav {
+	position:absolute;
+	left:10px;
+	top:50%;
+	margin-top:-35px; /* height/2 */
+	width:25px;
+	height:50px;
+	background:url(skins/default/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.youtubeVimeoWithPlaylist.default .leftNav:hover {
+	background:url(skins/default/leftNavON.png) 0 0 no-repeat;
+}
+.youtubeVimeoWithPlaylist.default .rightNav {
+	position:absolute;
+	right:10px;
+	top:50%;
+	margin-top:-35px; /* height/2 */
+	width:25px;
+	height:50px;
+	background:url(skins/default/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.youtubeVimeoWithPlaylist.default .rightNav:hover {
+	background:url(skins/default/rightNavON.png) 0 0 no-repeat;
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolderWrapper {
+	position:absolute;
+	background:#404040;
+	height:100%;
+	overflow:hidden;
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolderVisibleWrapper {
+	position:absolute;
+	height:100%;
+	overflow:hidden;
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolder {
+	position:absolute;
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolder_ThumbOFF {
+	display:block;
+	text-align:left;
+	/*line-height:1.4em;*/
+	cursor: pointer;
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolder_ThumbOFF  .padding {
+	/*padding:10px;*/
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolder_ThumbOFF .title {
+	font-family: 'PT Sans', sans-serif;
+	letter-spacing:0.5px;
+	font-weight:bold;
+	display:inline-block;
+	padding-bottom:5px;
+	overflow:hidden;
+	display:block;
+}
+.youtubeVimeoWithPlaylist.default .thumbsHolder_ThumbOFF .reg {
+	font-family: 'PT Sans', sans-serif;
+	font-weight:normal;
+	overflow:hidden;
+	display:block;
+}
+
+.youtubeVimeoWithPlaylist.default .thumbsHolder_ThumbOFF img {
+	position:relative;
+	float:left;
+	margin-right:10px;
+	width:90px;
+	height:90px;
+}
+
+
+
+
+/*  scroller start */
+.youtubeVimeoWithPlaylist.default .slider-vertical {
+	display:none;
+	position:absolute;
+	width:6px;
+}
+
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider { position: relative;}
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 6px; height: 25px; cursor: pointer; background:url(skins/default/scrollerFaceOFF.png) 0 0 no-repeat; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider .ui-slider-handle:hover { background:url(skins/default/scrollerFaceON.png) 0 0 no-repeat; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider .ui-slider-range { position: absolute; z-index: 1; display: block; border: 0; }
+
+
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider-vertical { width: 6px; height: 100px; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider-vertical .ui-slider-handle { left: 0px; margin-left: 0px; margin-bottom: -25px;; border: 0; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+
+/* Component containers
+----------------------------------*/
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-widget-content { xbackground: #FF0000; }
+.youtubeVimeoWithPlaylist.default .slider-vertical .ui-widget-header { xbackground: #0000cc; }
+
+
+/* Corner radius */
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-corner-all {}
+
+/* Interaction states
+----------------------------------
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-state-default {background: #000000; }
+.youtubeVimeoWithPlaylist.default .slider-vertical.ui-state-hover { background: #FFF000;  }
+*/
+/*  scroller end */
+
+
+.youtubeVimeoWithPlaylist.default .lbg_player {
+	z-index:-1;
+	position:absolute;
+}
+
+.youtubeVimeoWithPlaylist.default .lbg_vimeo_player {
+	z-index:-1;
+	position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***Slider TEXTS***/
+
+
+
+.textElement11 {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:22px;
+	line-height:22px;
+	color:#000000;
+}
+
+.textElement12 {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:16px;
+	color:#0000000;
+}
+
+
+
+.textElement31 {
+	background:#d61d1d;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:18px;
+	line-height:18px;
+	padding:0 2px 2px 2px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+.textElement32 {
+	background:#ffffff;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:18px;
+	line-height:18px;
+	padding:0 2px 2px 2px;
+	color:#000000;
+}
+
+.textElement33 {
+	background:#000000;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:18px;
+	line-height:18px;
+	padding:0 2px 2px 2px;
+	color:#ffffff;
+}
+
+.textElement41 {
+	background:url(skins/default/textBg_transparency.png);
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:24px;
+	line-height:24px;
+	padding:2px 3px 2px 3px;
+	color:#ffffff;
+}
+
+
+.textElement41 a {
+	text-decoration:none;
+	color:#ff5c1c;
+}
+
+.textElement41 a:hover {
+	color:#ffffff;
+}
+
+
+
+.textElement42 {
+	background: #FFFFFF;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:18px;
+	line-height:18px;
+	padding:2px 3px 2px 3px;
+	color:#ff0000;
+}
+
+
+.textElement61 {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:38px;
+	line-height:38px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+.textElement62 {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:20px;
+	line-height:20px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+/***SliderFullWidth TEXTS***/
+
+
+
+.textElement11_FullWidth {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:32px;
+	line-height:32px;
+	color:#000000;
+}
+
+.textElement12_FullWidth {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:26px;
+	line-height:26px;
+	color:#0000000;
+}
+
+
+
+.textElement31_FullWidth {
+	background:#d61d1d;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:28px;
+	line-height:28px;
+	padding:0 2px 2px 2px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+.textElement32_FullWidth {
+	background:#ffffff;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:28px;
+	line-height:28px;
+	padding:0 2px 2px 2px;
+	color:#000000;
+}
+
+.textElement33_FullWidth {
+	background:#000000;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:28px;
+	line-height:28px;
+	padding:0 2px 2px 2px;
+	color:#ffffff;
+}
+
+.textElement41_FullWidth {
+	background:url(skins/default/textBg_transparency.png);
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:44px;
+	line-height:44px;
+	padding:2px 3px 2px 3px;
+	color:#ffffff;
+}
+
+
+.textElement41_FullWidth a {
+	text-decoration:none;
+	color:#ff5c1c;
+}
+
+.textElement41_FullWidth a:hover {
+	color:#ffffff;
+}
+
+
+
+.textElement42_FullWidth {
+	background: #FFFFFF;
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:38px;
+	line-height:38px;
+	padding:2px 3px 2px 3px;
+	color:#ff0000;
+}
+
+
+.textElement61_FullWidth {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:48px;
+	line-height:48px;
+	text-transform:uppercase;
+	color:#000000;
+}
+.textElement62_FullWidth {
+	font-family: 'PT Sans', Verdana, Helvetica, sans-serif;
+	font-size:30px;
+	line-height:30px;
+	text-transform:uppercase;
+	color:#000000;
+}
+
+
+
+
+
+
+
+
+
+.youtubeVimeoWithPlaylist_texts {
+	position:absolute;
+	z-index:3;
+	display:none;
+	width:100%;
+	text-align:left;
+}
+
+.youtubeVimeoWithPlaylist_text_line {
+	position:absolute;
+}
+
+
+
+.hideElement {
+	display:none;
+}
